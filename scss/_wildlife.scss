@@ -1,0 +1,93 @@
+ // WILDLIFE SECTION STYLING
+.wildlife__section {
+    background: #daebd1;
+    margin: 30px 0 3px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+        font-family: 'Futura-Bold';
+        text-align: center;
+        margin: 30px 0;
+        font-size: 2rem;
+    }
+    .wildlife__card {
+        img {
+            width: 100%;
+        }
+        .wildlife__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            padding: 5px 16px;
+        }
+        a {
+            width: 120px;
+            text-align: center;
+            margin: 16px 0 30px;
+            background: #fff;
+            padding: 5px 10px;
+            color: #583512;
+            text-transform: uppercase;
+            font-family: 'Futura-Medium';
+            font-size: 0.6rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+// MEDIA QUERIES --------------------------
+@media only screen and (min-width: 375px) {
+
+    .wildlife__section {
+        margin: 50px 0 3px 0;
+        h2 {
+            padding-top: 30px;
+        }
+        .wildlife__card {
+            img {
+                width: 100%;
+            }
+            .wildlife__text {
+                p {
+                    width: 75%;
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    padding: 5px 16px;
+                }
+                a {
+                    width: 170px;
+                    padding: 10px 20px;
+                    font-size: 0.7rem;
+                }
+            }   
+        }    
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .wildlife__section {
+        width: 100%;
+        margin: 50px auto 3px 0 !important;
+        .wildlife__card {
+            width: 75%;
+            margin: 0 auto;
+            img {
+                width: 100%;
+            }
+        }    
+    }
+}

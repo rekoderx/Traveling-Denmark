@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('../images/aarhus4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        background: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+    .nav__bar--desktop {
+        position: relative;
+        z-index: 3;
+        background: rgba(0,0,0,0.5);
+        display: block;
+        .nav__container {
+            max-width: 1366px;
+            height: 12vh;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a img {
+                width: 7rem;
+                margin-top: 60px;
+            }
+            .left__menu--list,
+            .right__menu--list {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: 'Helvetica-Light', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+                a:hover {
+                    color:#D2A658;
+                }
+                .destination {
+                    color: orange;
+                }
+            }
+            .left__menu--list a li {
+                list-style: none;
+                margin: 0 40px 0 0;
+            }
+            .right__menu--list a li {
+                list-style: none;
+                margin: 0 0 0 40px;
+            }
+        }
+    }
+    .main__section {
+        position: absolute;
+        z-index: 5;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color: #fff;
+            padding-top: 50px;
+            font-size: 5rem;
+            font-family: 'Futura-Bold', sans-serif;
+            text-transform: uppercase;
+        }
+        p {
+            color: #fff;
+            width: 50%;
+            font-size: 1.5rem;
+            padding: 50px 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+        }
+    }
+}
+
+// Main Styling
+.main__article {
+    max-width: 1366px;
+    margin: 0 auto;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    h2 {
+        color: #333;
+        text-transform: capitalize;
+        font-family: 'Futura-Bold', sans-serif;
+        font-size: 2.7rem;
+    }
+    .article__container {
+        a {
+            text-decoration: none;
+        }
+        margin: 0 auto;
+        display: grid;
+        gap: 66px;
+        grid-template-columns: 30% 30% 30%;
+        .card {
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            height: 450px;
+            box-shadow: 1px 1px 5px -1px #474747;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            h3 {
+                font-family: 'Futura-Bold', sans-serif;
+                color: #333;
+                font-size: 2rem;
+                text-transform: uppercase;
+                
+            }
+            img {
+                width: 100%;
+                margin: 30px 0;
+                height: 200px;
+            }
+            h5 {
+                font-family: 'Lato', sans-serif;
+                color: #333;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.instagram {
+    position: relative;
+    margin-bottom: 3px;
+    .instagram__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 17%;
+            height: 175px;
+        }
+    }
+    .instagram__link {
+        // position: absolute;
+        // top: 40%;
+        // left: 22%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 40%;
+        a {
+            width: 170px;
+            text-align: center;
+            background: #D2A658;
+            padding: 10px 20px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Futura-Medium';
+            font-size: 0.6rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+.footer {
+    background-color: #423936;
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        padding: 30px 0;
+        .other__resources {
+            padding: 8px;
+            h4 {
+                font-size: 1rem;
+                width: 200px;
+                text-align: center;
+                padding: 10px 0;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .follow__us {
+            text-align: center;
+            margin: 20px 0;
+            h4 {
+                padding: 10px 0;
+            }
+            .social__media {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                margin: 0px auto;
+                .fab {
+                    font-size: 1.5rem;
+                }
+            }
+            p {
+                width: 60%;
+                text-align: center;
+                margin: 10px auto;
+            }
+        }
+        .photography__tips {
+            padding: 8px;
+            h4 {
+                font-size: 1rem;
+                width: 200px;
+                text-align: center;
+                padding: 10px 0;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  background-image: url("../images/aarhus4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  position: relative; }
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1; }
+  header .nav__bar--desktop {
+    position: relative;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.5);
+    display: block; }
+    header .nav__bar--desktop .nav__container {
+      max-width: 1366px;
+      height: 12vh;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header .nav__bar--desktop .nav__container a img {
+        width: 7rem;
+        margin-top: 60px; }
+      header .nav__bar--desktop .nav__container .left__menu--list,
+      header .nav__bar--desktop .nav__container .right__menu--list {
+        display: flex;
+        justify-content: space-between; }
+        header .nav__bar--desktop .nav__container .left__menu--list a,
+        header .nav__bar--desktop .nav__container .right__menu--list a {
+          text-decoration: none;
+          color: #fff;
+          font-family: 'Helvetica-Light', sans-serif;
+          font-weight: 400;
+          font-size: 1.2rem; }
+        header .nav__bar--desktop .nav__container .left__menu--list a:hover,
+        header .nav__bar--desktop .nav__container .right__menu--list a:hover {
+          color: #D2A658; }
+        header .nav__bar--desktop .nav__container .left__menu--list .destination,
+        header .nav__bar--desktop .nav__container .right__menu--list .destination {
+          color: orange; }
+      header .nav__bar--desktop .nav__container .left__menu--list a li {
+        list-style: none;
+        margin: 0 40px 0 0; }
+      header .nav__bar--desktop .nav__container .right__menu--list a li {
+        list-style: none;
+        margin: 0 0 0 40px; }
+  header .main__section {
+    position: absolute;
+    z-index: 5;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header .main__section h1 {
+      color: #fff;
+      padding-top: 50px;
+      font-size: 5rem;
+      font-family: 'Futura-Bold', sans-serif;
+      text-transform: uppercase; }
+    header .main__section p {
+      color: #fff;
+      width: 50%;
+      font-size: 1.5rem;
+      padding: 50px 0;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300; }
+
+.main__article {
+  max-width: 1366px;
+  margin: 0 auto;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  .main__article h2 {
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Futura-Bold', sans-serif;
+    font-size: 2.7rem; }
+  .main__article .article__container {
+    margin: 0 auto;
+    display: grid;
+    gap: 66px;
+    grid-template-columns: 30% 30% 30%; }
+    .main__article .article__container a {
+      text-decoration: none; }
+    .main__article .article__container .card {
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      height: 450px;
+      box-shadow: 1px 1px 5px -1px #474747;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start; }
+      .main__article .article__container .card h3 {
+        font-family: 'Futura-Bold', sans-serif;
+        color: #333;
+        font-size: 2rem;
+        text-transform: uppercase; }
+      .main__article .article__container .card img {
+        width: 100%;
+        margin: 30px 0;
+        height: 200px; }
+      .main__article .article__container .card h5 {
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        font-size: 1.5rem; }
+
+.instagram {
+  position: relative;
+  margin-bottom: 3px; }
+  .instagram .instagram__container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .instagram .instagram__container img {
+      width: 17%;
+      height: 175px; }
+  .instagram .instagram__link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40%; }
+    .instagram .instagram__link a {
+      width: 170px;
+      text-align: center;
+      background: #D2A658;
+      padding: 10px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Futura-Medium';
+      font-size: 0.6rem;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px; }
+
+.footer {
+  background-color: #423936; }
+  .footer .footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0; }
+    .footer .footer__container .other__resources {
+      padding: 8px; }
+      .footer .footer__container .other__resources h4 {
+        font-size: 1rem;
+        width: 200px;
+        text-align: center;
+        padding: 10px 0; }
+      .footer .footer__container .other__resources p {
+        text-align: center; }
+    .footer .footer__container .follow__us {
+      text-align: center;
+      margin: 20px 0; }
+      .footer .footer__container .follow__us h4 {
+        padding: 10px 0; }
+      .footer .footer__container .follow__us .social__media {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .footer .footer__container .follow__us .social__media .fab {
+          font-size: 1.5rem; }
+      .footer .footer__container .follow__us p {
+        width: 60%;
+        text-align: center;
+        margin: 10px auto; }
+    .footer .footer__container .photography__tips {
+      padding: 8px; }
+      .footer .footer__container .photography__tips h4 {
+        font-size: 1rem;
+        width: 200px;
+        text-align: center;
+        padding: 10px 0; }
+      .footer .footer__container .photography__tips p {
+        text-align: center; }
+
+/*# sourceMappingURL=middlejutland.css.map */

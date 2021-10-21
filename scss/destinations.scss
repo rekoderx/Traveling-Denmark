@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    .nav__bar--desktop {
+        display: block;
+        .nav__container {
+            height: 12vh;
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a img {
+                width: 7rem;
+                margin-top: 60px;
+            }
+            .left__menu--list,
+            .right__menu--list {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-family: 'Helvetica-Light', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+                a:hover {
+                    color:#D2A658;
+                }
+                .destination {
+                    color: orange;
+                }
+            }
+            .left__menu--list a li {
+                list-style: none;
+                margin: 0 40px 0 0;
+            }
+            .right__menu--list a li {
+                list-style: none;
+                margin: 0 0 0 40px;
+            }
+        }
+    }
+}
+
+.main__article {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 33% 33% 33%;
+    width: 80%;
+    margin: 120px auto;
+    .card {
+        box-shadow: 1px 1px 5px -1px #474747;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        // width: 30%;
+        height: 255px;
+        .overlay {
+            width: 100%;
+            height: 50px;
+            background: rgba(0,0,0,0.5);
+            position: absolute;
+            bottom: 16px;
+            h5 {
+                font-family: 'Futura-Bold';
+                text-transform: uppercase;
+                padding: 10px 0 0 20px;
+                color: #fff;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .middle__jutland {
+        background-image: url('../images/aarhus9.jpg');
+    }
+    .copenhagen {
+        background-image: url('../images/cph1.jpg');
+    }
+    .nord__jutland {
+        background-image: url('../images/lokken1.jpg');
+    }
+    .south__jutland {
+        background-image: url('../images/lokken1.jpg');
+    }
+    .destinations {
+        background: #fff;
+        height: 255px;
+        .card__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .card__text--paragraph {
+                p {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 1.2rem;
+                    text-align: justify;
+                    padding: 32px;
+                    line-height: 1.5;
+                }
+            }
+            .card__text--title  {
+                font-size: 1.4rem;
+                font-family: 'Helvetica-Light', sans-serif;
+                text-transform: uppercase;
+                color: orange;
+                padding: 8px;
+                text-shadow: 1px 1px 4px rgba(150, 150, 150, 0.71);
+            }
+        }
+    }
+    .sjaelland {
+        background-image: url('/images/lokken4.jpg');
+    }
+}
+
+// Instagram Styling
+.instagram {
+    margin-top: -80px;
+    position: relative;
+    margin-bottom: 3px;
+    .instagram__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 17%;
+            height: 175px;
+        }
+    }
+    .instagram__link {
+        // position: absolute;
+        // top: 40%;
+        // left: 22%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 40%;
+        a {
+            width: 170px;
+            text-align: center;
+            background: #D2A658;
+            padding: 10px 20px;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Futura-Medium';
+            font-size: 0.6rem;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+// Footer Styling
+.footer {
+    background-color: #423936;
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        padding: 30px 0;
+        .other__resources {
+            padding: 8px;
+            h4 {
+                font-size: 1rem;
+                width: 200px;
+                text-align: center;
+                padding: 10px 0;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        .follow__us {
+            text-align: center;
+            margin: 20px 0;
+            h4 {
+                padding: 10px 0;
+            }
+            .social__media {
+                width: 40%;
+                display: flex;
+                justify-content: space-around;
+                margin: 0px auto;
+                .fab {
+                    font-size: 1.5rem;
+                }
+            }
+            p {
+                width: 60%;
+                text-align: center;
+                margin: 10px auto;
+            }
+        }
+        .photography__tips {
+            padding: 8px;
+            h4 {
+                font-size: 1rem;
+                width: 200px;
+                text-align: center;
+                padding: 10px 0;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:568px) {
+
+    header {
+        .nav__bar--desktop {
+            .nav__container {
+                height: 8vh;
+                a img {
+                    display: none;
+                }
+                .left__menu--list,
+                .right__menu--list {
+                    a {
+                        font-size: 0.3rem;
+                    }
+                }
+                .left__menu--list a li {
+                    margin: 0 10px 0 0;
+                }
+                .right__menu--list a li {
+                    list-style: none;
+                    margin: 0 0 0 10px;
+                }
+            }
+        }
+    }
+    
+    .main__article {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 5px auto;
+        .card {
+            height: 180px;
+            .overlay {
+                bottom: 10px;
+                h5 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .destinations {
+            box-shadow: none;
+            order: -1;
+            height: 180px;
+            .card__text {
+                flex-direction: column-reverse;
+                .card__text--paragraph {
+                    p {
+                        font-size: 0.8rem;
+                        padding-bottom: 10px;
+                    }
+                }
+                .card__text--title  {
+                    font-size: 0.8rem;
+                    padding-top: 24px;
+                }
+            }
+        }
+    }
+}
+// Instagram & Footer Styling
+
